@@ -351,384 +351,1299 @@
             <div class="section-title">
                 <h2>Jenis Data dan Format-formatnya</h2>
             </div>
-            <div class="data-grid">
-                <!-- Font -->
-                <div class="data-card">
-                    <div class="data-card-header">
-                        <i class="fas fa-font"></i>
-                        <h3>Font</h3>
+            
+            <div class="category-tabs">
+                <button class="tab-button active" onclick="openTab('image')">
+                    <i class="fas fa-image"></i> IMAGE
+                </button>
+                <button class="tab-button" onclick="openTab('video')">
+                    <i class="fas fa-video"></i> VIDEO
+                </button>
+                <button class="tab-button" onclick="openTab('audio')">
+                    <i class="fas fa-music"></i> AUDIO
+                </button>
+                <button class="tab-button" onclick="openTab('font')">
+                    <i class="fas fa-font"></i> FONT
+                </button>
+                <button class="tab-button" onclick="openTab('animation')">
+                    <i class="fas fa-film"></i> ANIMATION
+                </button>
+            </div>
+        
+            <!-- Tab IMAGE -->
+            <div id="image" class="tab-content" style="display: block;">
+                <div class="format-grid">
+                    <!-- JPEG -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>JPEG</h3>
+                            <span>.jpeg</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1CCVGrtMuiwxQwtGQ9zw0AgG6mHIq3Bri/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>batman.jpeg</p>
+                            <a href="https://drive.google.com/file/d/1CCVGrtMuiwxQwtGQ9zw0AgG6mHIq3Bri/view" target="_blank" class="download-btn">                        
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
                     </div>
-                    <div class="data-card-content">
-                        <div class="formats">
-                            <div class="example">
-                                <h4>Arial</h4>
-                                <p style="font-family: 'Arial'"> Halo, ini preview dari font terkait</p>
-                            </div>
-                            <div class="example">
-                                <h4>Times New Roman</h4>
-                                <p style="font-family: 'Times New Roman'"> Halo, ini preview dari font terkait</p>
-                            </div>
-                            <div class="example">
-                                <h4>Verdana</h4>
-                                <p style="font-family: 'Verdana'"> Halo, ini preview dari font terkait</p>
-                            </div>
-                            <div class="example">
-                                <h4>Georgia</h4>
-                                <p style="font-family: 'Georgia'"> Halo, ini preview dari font terkait</p>
-                            </div>
-                            <div class="example">
-                                <h4>Tahoma</h4>
-                                <p style="font-family: 'Tahoma'"> Halo, ini preview dari font terkait</p>
-                            </div>
-                            <div class="example">
-                                <h4>Sans-Serif</h4>
-                                <p style="font-family: 'sans-serif'"> Halo, ini preview dari font terkait</p>
-                            </div>
-                            <div class="example">
-                                <h4>Garamond</h4>
-                                <p style="font-family: 'Garamond'"> Halo, ini preview dari font terkait</p>
-                            </div>
-                            <div class="example">
-                                <h4>Consolas</h4>
-                                <p style="font-family: 'Consolas'"> Halo, ini preview dari font terkait</p>
-                            </div>
-                            <div class="example">
-                                <h4>Courier New</h4>
-                                <p style="font-family: 'Courier New'"> Halo, ini preview dari font terkait</p>
-                            </div>
-                            <div class="example">
-                                <h4>Impact</h4>
-                                <p style="font-family: 'Impact'"> Halo, ini preview dari font terkait</p>
-                            </div>
+                    
+                    <!-- PNG -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>PNG</h3>
+                            <span>.png</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1NNi7FE8O-bhTIXzGCioRpRGzFbBP-6zh/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>batman.png</p>
+                            <a href="https://drive.google.com/file/d/1NNi7FE8O-bhTIXzGCioRpRGzFbBP-6zh/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- GIF -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>ESP</h3>
+                            <span>.esp</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/13H-hV95YSDBqjC3Q4woy_A2TPXsLgrTj/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>batman.esp</p>
+                            <a href="https://drive.google.com/file/d/13H-hV95YSDBqjC3Q4woy_A2TPXsLgrTj/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- WEBP -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>WEBP</h3>
+                            <span>.webp</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1n_YsHChtdtrRRqYCKCK2mEF5DR0ZCcVL/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>batman.webp</p>
+                            <a href="https://drive.google.com/file/d/1n_YsHChtdtrRRqYCKCK2mEF5DR0ZCcVL/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- BMP -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>BMP</h3>
+                            <span>.bmp</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1d5c-EbhdFjlZ_HImwvTokQ6XmERtA4MU/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>batman.bmp</p>
+                            <a href="https://drive.google.com/file/d/1d5c-EbhdFjlZ_HImwvTokQ6XmERtA4MU/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- TIFF -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>TIFF</h3>
+                            <span>.tiff</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1qLZ_8RKLSqIH9XqMf30c_lqqyV61qJjO/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>batman.tiff</p>
+                            <a href="https://drive.google.com/file/d/1qLZ_8RKLSqIH9XqMf30c_lqqyV61qJjO/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- SVG -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>SVG</h3>
+                            <span>.svg</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1wrM7fAflVYhD4IMb4J47dvfPhxswjtmt/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>batman.svg</p>
+                            <a href="https://drive.google.com/file/d/1wrM7fAflVYhD4IMb4J47dvfPhxswjtmt/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- GIF -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>GIF</h3>
+                            <span>.gif</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1ttBx3L9_YHpxBXvwy8zjSVfkxa0h7qIY/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>batman.gif</p>
+                            <a href="https://drive.google.com/file/d/1ttBx3L9_YHpxBXvwy8zjSVfkxa0h7qIY/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- HEIC -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>HEIC</h3>
+                            <span>.heic</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1cJqdINLuveB2ieQKBTrylsaYpFtcDlWt/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>batman.heic</p>
+                            <a href="https://drive.google.com/file/d/1cJqdINLuveB2ieQKBTrylsaYpFtcDlWt/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- jpg -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>JPG</h3>
+                            <span>.jpg</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1vQz6YZWU_Y_kiVZco8nfw7Pon-6b57mT/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>batman.jpg</p>
+                            <a href="https://drive.google.com/file/d/1vQz6YZWU_Y_kiVZco8nfw7Pon-6b57mT/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Gambar -->
-                <div class="data-card">
-                    <div class="data-card-header">
-                        <i class="fas fa-image"></i>
-                        <h3>Gambar</h3>
+            </div>
+        
+            <!-- Tab VIDEO -->
+            <div id="video" class="tab-content">
+                <div class="format-grid">
+                    <!-- MP4 -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>MP4</h3>
+                            <span>.mp4</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1wGLJY8drfADGnMXxOfMZ1kpfo5hoNqSO/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>meme.mp4</p>
+                            <a href="https://drive.google.com/file/d/1wGLJY8drfADGnMXxOfMZ1kpfo5hoNqSO/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
                     </div>
-                    <div class="data-card-content">
-                        <div class="formats">
-                            <div class="example">
-                                <h4>Gambar 1 (.jpeg)</h4>
-                                <div class="image-example">
-                                    <img src="Tugas/gambar/Batman.jpeg">
-                                </div>
-                                <p>Contoh gambar format JPEG</p>
-                            </div>
-                            <div class="example">
-                                <h4>Gambar 2 (.png)</h4>
-                                <div class="image-example">
-                                    <img src="Tugas/gambar/Batman.png">
-                                </div>
-                                <p>Contoh gambar format PNG</p>
-                            </div>
-                            <div class="example">
-                                <h4>Gambar 3 (.gif)</h4>
-                                <div class="image-example">
-                                    <img src="Tugas/gambar/Batman.gif">
-                                </div>
-                                <p>Contoh gambar format GIF</p>
-                            </div>
-                            <div class="example">
-                                <h4>Gambar 4 (.webp)</h4>
-                                <div class="image-example">
-                                    <img src="Tugas/gambar/Batman.webp">
-                                </div>
-                                <p>Contoh gambar format WebP</p>
-                            </div>
-                            <div class="example">
-                                <h4>Gambar 5 (.svg)</h4>
-                                <div class="image-example">
-                                    <img src="Tugas/gambar/Batman.svg">
-                                </div>
-                                <p>Contoh gambar format SVG</p>
-                            </div>
-                            <div class="example">
-                                <h4>Gambar 6 (.jpg)</h4>
-                                <div class="image-example">
-                                    <img src="Tugas/gambar/Batman.jpg">
-                                </div>
-                                <p>Contoh gambar format JPG</p>
-                            </div>
-                            <div class="example">
-                                <h4>Gambar 7 (.tiff)</h4>
-                                <div class="image-example">
-                                    <img src="Tugas/gambar/Batman.tiff">
-                                </div>
-                                <p>Contoh gambar format TIFF</p>
-                            </div>
-                            <div class="example">
-                                <h4>Gambar 8 (.bmp)</h4>
-                                <div class="image-example">
-                                    <img src="Tugas/gambar/Batman.bmp">
-                                </div>
-                                <p>Contoh gambar format BMP</p>
-                            </div>
-                            <div class="example">
-                                <h4>Gambar 9 (.psd)</h4>
-                                <div class="image-example">
-                                    <img src="Tugas/gambar/Batman.psd";
-                                </div>
-                                <p>Contoh gambar format PSD</p>
-                            </div>
-                            <div class="example">
-                                <h4>Gambar 10 (.eps)</h4>
-                                <div class="image-example">
-                                    <img src="Tugas/gambar/Batman.eps";
-                                </div>
-                                <p>Contoh gambar format EPS</p>
-                            </div>
+                    
+                    <!-- AVI -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>AVI</h3>
+                            <span>.avi</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1oo8zvTcd76QqVP26v1UryIjmeLOQcRsv/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>meme.avi</p>
+                            <a href="https://drive.google.com/file/d/1oo8zvTcd76QqVP26v1UryIjmeLOQcRsv/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- MKV -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>MKV</h3>
+                            <span>.mkv</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1JyWu8PNwunZRq6qxYWPojC8mpUwCHiNE/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>meme.mkv</p>
+                            <a href="https://drive.google.com/file/d/1JyWu8PNwunZRq6qxYWPojC8mpUwCHiNE/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- MOV -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>MOV</h3>
+                            <span>.mov</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1oFF6AHjEnZJCiEHOueFgMYMlkXTiWrT5/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>meme.mov</p>
+                            <a href="https://drive.google.com/file/d/1oFF6AHjEnZJCiEHOueFgMYMlkXTiWrT5/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- OGV -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>OGV</h3>
+                            <span>.ogv</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/16LHiIJnwIXp1RnclccnHa4mzHMEPrYvi/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>meme.ogv</p>
+                            <a href="https://drive.google.com/file/d/16LHiIJnwIXp1RnclccnHa4mzHMEPrYvi/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- FLV -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>FLV</h3>
+                            <span>.flv</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1W7Iq9eYQ_R30A6qrNy0XMY_UsjsGdHbn/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>meme.flv</p>
+                            <a href="https://drive.google.com/file/d/1W7Iq9eYQ_R30A6qrNy0XMY_UsjsGdHbn/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- WEBM -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>WEBM</h3>
+                            <span>.webm</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1PhDYhspOuQOcDW7H2hvBQ4wnA4mu9FZL/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>meme.webm</p>
+                            <a href="https://drive.google.com/file/d/1PhDYhspOuQOcDW7H2hvBQ4wnA4mu9FZL/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- MPEG -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>MPEG</h3>
+                            <span>.mpeg</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1KrJM17F5W-sjWXoIkaNH0Eaw0_IcNsyM/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>meme.mpeg</p>
+                            <a href="https://drive.google.com/file/d/1KrJM17F5W-sjWXoIkaNH0Eaw0_IcNsyM/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- 3GP -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>3GP</h3>
+                            <span>.3gp</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1U51QU8FltASek6s9gnNcl2vlmzZPi4S9/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>meme.3gp</p>
+                            <a href="https://drive.google.com/file/d/1U51QU8FltASek6s9gnNcl2vlmzZPi4S9/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- WMV -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>WMV</h3>
+                            <span>.wmv</span>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://drive.google.com/file/d/1DjBDZp9ihwmJCICZNVJLOqQMBhj78l5w/preview" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>meme.wmv</p>
+                            <a href="https://drive.google.com/file/d/1DjBDZp9ihwmJCICZNVJLOqQMBhj78l5w/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Audio -->
-                <div class="data-card">
-                    <div class="data-card-header">
-                        <i class="fas fa-music"></i>
-                        <h3>Audio</h3>
+            </div>
+        
+            <!-- Tab AUDIO -->
+            <div id="audio" class="tab-content">
+                <div class="format-grid">
+                    <!-- MP3 -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>MP3</h3>
+                            <span>.mp3</span>
+                        </div>
+                        <div class="format-preview audio-preview" data-fileid="1ljztX_vGtBRuDXtobnWvH4uEjjb6jUaQ">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="format-desc">
+                            <p>er.mp3</p>
+                            <a href="https://drive.google.com/file/d/1ljztX_vGtBRuDXtobnWvH4uEjjb6jUaQ/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
                     </div>
-                    <div class="data-card-content">
-                        <div class="formats">
-                            <div class="example">
-                                <h4>Audio 1 (.mp3)</h4>
-                                <audio controls style="width: 100%">
-                                    <source src="Tugas/audio/audio.mp3";
-                                </audio>
-                                <p>Contoh audio format MP3</p>
-                            </div>
-                            <div class="example">
-                                <h4>Audio 2 (.wav)</h4>
-                                <audio controls style="width: 100%">
-                                    [File audio 2.wav]
-                                </audio>
-                                <p>Contoh audio format WAV</p>
-                            </div>
-                            <div class="example">
-                                <h4>Audio 3 (.ogg)</h4>
-                                <audio controls style="width: 100%">
-                                    [File audio 3.ogg]
-                                </audio>
-                                <p>Contoh audio format OGG</p>
-                            </div>
-                            <div class="example">
-                                <h4>Audio 4 (.flac)</h4>
-                                <audio controls style="width: 100%">
-                                    [File audio 4.flac]
-                                </audio>
-                                <p>Contoh audio format FLAC</p>
-                            </div>
-                            <div class="example">
-                                <h4>Audio 5 (.aac)</h4>
-                                <audio controls style="width: 100%">
-                                    [File audio 5.aac]
-                                </audio>
-                                <p>Contoh audio format AAC</p>
-                            </div>
-                            <div class="example">
-                                <h4>Audio 6 (.mp3)</h4>
-                                <audio controls style="width: 100%">
-                                    [File audio 6.mp3]
-                                </audio>
-                                <p>Contoh audio format MP3</p>
-                            </div>
-                            <div class="example">
-                                <h4>Audio 7 (.wav)</h4>
-                                <audio controls style="width: 100%">
-                                    [File audio 7.wav]
-                                </audio>
-                                <p>Contoh audio format WAV</p>
-                            </div>
-                            <div class="example">
-                                <h4>Audio 8 (.m4a)</h4>
-                                <audio controls style="width: 100%">
-                                    [File audio 8.m4a]
-                                </audio>
-                                <p>Contoh audio format M4A</p>
-                            </div>
-                            <div class="example">
-                                <h4>Audio 9 (.opus)</h4>
-                                <audio controls style="width: 100%">
-                                    [File audio 9.opus]
-                                </audio>
-                                <p>Contoh audio format Opus</p>
-                            </div>
-                            <div class="example">
-                                <h4>Audio 10 (.mp3)</h4>
-                                <audio controls style="width: 100%">
-                                    [File audio 10.mp3]
-                                </audio>
-                                <p>Contoh audio format MP3</p>
-                            </div>
+                    
+                    <!-- WAV -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>WAV</h3>
+                            <span>.wav</span>
+                        </div>
+                        <div class="format-preview audio-preview" data-fileid="1ilL3Lw2n2BPH_3HghUElnQ1lx0UrDPga">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="format-desc">
+                            <p>er.wav</p>
+                            <a href="https://drive.google.com/file/d/1ilL3Lw2n2BPH_3HghUElnQ1lx0UrDPga/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- AAC -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>AAC</h3>
+                            <span>.aac</span>
+                        </div>
+                        <div class="format-preview audio-preview" data-fileid="1yuXbKbQ08loFm0ig4C-CotKD11ORgjsm">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="format-desc">
+                            <p>er.aac</p>
+                            <a href="https://drive.google.com/file/d/1yuXbKbQ08loFm0ig4C-CotKD11ORgjsm/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- FLAC -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>FLAC</h3>
+                            <span>.flac</span>
+                        </div>
+                        <div class="format-preview audio-preview" data-fileid="1Lpzz5vsSMHdyDzlj34D-nOxwsLCRVLtr">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="format-desc">
+                            <p>er.flac</p>
+                            <a href="https://drive.google.com/file/d/1Lpzz5vsSMHdyDzlj34D-nOxwsLCRVLtr/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- OGG -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>OGG</h3>
+                            <span>.ogg</span>
+                        </div>
+                        <div class="format-preview audio-preview" data-fileid="1pSgzfI4qq6_tacK7HluDSt4rlUefrngo">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="format-desc">
+                            <p>er.ogg</p>
+                            <a href="https://drive.google.com/file/d/1pSgzfI4qq6_tacK7HluDSt4rlUefrngo/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- WMA -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>WMA</h3>
+                            <span>.wma</span>
+                        </div>
+                        <div class="format-preview audio-preview" data-fileid="18HRRj99_U2RPpUNa8f9tChwvCzuYopVA">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="format-desc">
+                            <p>er.wma</p>
+                            <a href="https://drive.google.com/file/d/18HRRj99_U2RPpUNa8f9tChwvCzuYopVA/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- AIFF -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>AIFF</h3>
+                            <span>.aiff</span>
+                        </div>
+                        <div class="format-preview audio-preview" data-fileid="1izD6B-jlla9Ti5pwq6TJaKywIjwNJEKf">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="format-desc">
+                            <p>er.aiff</p>
+                            <a href="https://drive.google.com/file/d/1izD6B-jlla9Ti5pwq6TJaKywIjwNJEKf/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- M4A -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>M4A</h3>
+                            <span>.m4a</span>
+                        </div>
+                        <div class="format-preview audio-preview" data-fileid="1mfxOXJhoaIftx9JgNQPwhRFwiHkdt62N">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="format-desc">
+                            <p>er.m4a</p>
+                            <a href="https://drive.google.com/file/d/1mfxOXJhoaIftx9JgNQPwhRFwiHkdt62N/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- MP2 -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>MP2</h3>
+                            <span>.mp2</span>
+                        </div>
+                        <div class="format-preview audio-preview" data-fileid="1xZY8GfJyL0jAqNKtiQsHWkqDQ7VxYvpx">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="format-desc">
+                            <p>er.mp2</p>
+                            <a href="https://drive.google.com/file/d/1xZY8GfJyL0jAqNKtiQsHWkqDQ7VxYvpx/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- AMR -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>AMR</h3>
+                            <span>.amr</span>
+                        </div>
+                        <div class="format-preview audio-preview" data-fileid="1SQjmL_ZEP79wQ8RQTRm0CB35CMWnuNo3">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="format-desc">
+                            <p>er.AMR</p>
+                            <a href="https://drive.google.com/file/d/1SQjmL_ZEP79wQ8RQTRm0CB35CMWnuNo3/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Video -->
-                <div class="data-card">
-                    <div class="data-card-header">
-                        <i class="fas fa-video"></i>
-                        <h3>Video</h3>
+            </div>
+        
+            <!-- Tab FONT -->
+            <div id="font" class="tab-content">
+                <div class="format-grid">
+                    <!-- TTF -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>TTF</h3>
+                            <span>.ttf</span>
+                        </div>
+                        <div class="format-preview font-preview">
+                            <p style="font-family: 'Arial'">Contoh Teks TTF - 1234567890</p>
+                        </div>
+                        <div class="format-desc">
+                            <p>font.ttf</p>
+                            <a href="https://drive.google.com/file/d/[TTF_FILE_ID]/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
                     </div>
-                    <div class="data-card-content">
-                        <div class="formats">
-                            <div class="example">
-                                <h4>Video 1 (.mp4)</h4>
-                                <video controls width="100%">
-                                    [File video 1.mp4]
-                                </video>
-                                <p>Contoh video format MP4</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 2 (.avi)</h4>
-                                <video controls width="100%">
-                                    [File video 2.avi]
-                                </video>
-                                <p>Contoh video format AVI</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 3 (.mov)</h4>
-                                <video controls width="100%">
-                                    [File video 3.mov]
-                                </video>
-                                <p>Contoh video format MOV</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 4 (.mkv)</h4>
-                                <video controls width="100%">
-                                    [File video 4.mkv]
-                                </video>
-                                <p>Contoh video format MKV</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 5 (.webm)</h4>
-                                <video controls width="100%">
-                                    [File video 5.webm]
-                                </video>
-                                <p>Contoh video format WebM</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 6 (.mp4)</h4>
-                                <video controls width="100%">
-                                    [File video 6.mp4]
-                                </video>
-                                <p>Contoh video format MP4</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 7 (.wmv)</h4>
-                                <video controls width="100%">
-                                    [File video 7.wmv]
-                                </video>
-                                <p>Contoh video format WMV</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 8 (.flv)</h4>
-                                <video controls width="100%">
-                                    [File video 8.flv]
-                                </video>
-                                <p>Contoh video format FLV</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 9 (.mpeg)</h4>
-                                <video controls width="100%">
-                                    [File video 9.mpeg]
-                                </video>
-                                <p>Contoh video format MPEG</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 10 (.mp4)</h4>
-                                <video controls width="100%">
-                                    [File video 10.mp4]
-                                </video>
-                                <p>Contoh video format MP4</p>
-                            </div>
+                    
+                    <!-- OTF -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>OTF</h3>
+                            <span>.otf</span>
+                        </div>
+                        <div class="format-preview font-preview">
+                            <p style="font-family: 'Times New Roman'">Contoh Teks OTF - 1234567890</p>
+                        </div>
+                        <div class="format-desc">
+                            <p>font.otf</p>
+                            <a href="https://drive.google.com/file/d/[OTF_FILE_ID]/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- WOFF -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>WOFF</h3>
+                            <span>.woff</span>
+                        </div>
+                        <div class="format-preview font-preview">
+                            <p style="font-family: 'Courier New'">Contoh Teks WOFF - 1234567890</p>
+                        </div>
+                        <div class="format-desc">
+                            <p>font.woff</p>
+                            <a href="https://drive.google.com/file/d/[WOFF_FILE_ID]/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- WOFF2 -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>WOFF2</h3>
+                            <span>.woff2</span>
+                        </div>
+                        <div class="format-preview font-preview">
+                            <p style="font-family: 'Georgia'">Contoh Teks WOFF2 - 1234567890</p>
+                        </div>
+                        <div class="format-desc">
+                            <p>font.woff2</p>
+                            <a href="https://drive.google.com/file/d/[WOFF2_FILE_ID]/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- EOT -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>EOT</h3>
+                            <span>.eot</span>
+                        </div>
+                        <div class="format-preview font-preview">
+                            <p style="font-family: 'Verdana'">Contoh Teks EOT - 1234567890</p>
+                        </div>
+                        <div class="format-desc">
+                            <p>font.eot</p>
+                            <a href="https://drive.google.com/file/d/[EOT_FILE_ID]/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- SVG Font -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>SVG Font</h3>
+                            <span>.svg</span>
+                        </div>
+                        <div class="format-preview font-preview">
+                            <p style="font-family: 'Trebuchet MS'">Contoh Teks SVG Font - 1234567890</p>
+                        </div>
+                        <div class="format-desc">
+                            <p>font.svg</p>
+                            <a href="https://drive.google.com/file/d/[SVGFONT_FILE_ID]/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- PostScript -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>PostScript</h3>
+                            <span>.pfb/.pfm</span>
+                        </div>
+                        <div class="format-preview font-preview">
+                            <p style="font-family: 'Palatino'">Contoh Teks PostScript - 1234567890</p>
+                        </div>
+                        <div class="format-desc">
+                            <p>font.pfb</p>
+                            <a href="https://drive.google.com/file/d/[PS_FILE_ID]/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- DFONT -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>DFONT</h3>
+                            <span>.dfont</span>
+                        </div>
+                        <div class="format-preview font-preview">
+                            <p style="font-family: 'Garamond'">Contoh Teks DFONT - 1234567890</p>
+                        </div>
+                        <div class="format-desc">
+                            <p>font.dfont</p>
+                            <a href="https://drive.google.com/file/d/[DFONT_FILE_ID]/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- FNT -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>FNT</h3>
+                            <span>.fnt</span>
+                        </div>
+                        <div class="format-preview font-preview">
+                            <p style="font-family: 'Bookman'">Contoh Teks FNT - 1234567890</p>
+                        </div>
+                        <div class="format-desc">
+                            <p>font.fnt</p>
+                            <a href="https://drive.google.com/file/d/[FNT_FILE_ID]/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- BDF -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>BDF</h3>
+                            <span>.bdf</span>
+                        </div>
+                        <div class="format-preview font-preview">
+                            <p style="font-family: 'Century Gothic'">Contoh Teks BDF - 1234567890</p>
+                        </div>
+                        <div class="format-desc">
+                            <p>font.bdf</p>
+                            <a href="https://drive.google.com/file/d/[BDF_FILE_ID]/view" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Download
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="data-card">
-                    <div class="data-card-header">
-                        <i class="fas fa-film"></i>
-                        <h3>Animasi</h3>
-                    </div>
-                    <div class="data-card-content">
-                        <div class="formats">
-                            <div class="example">
-                                <h4>Video 1 (.mp4)</h4>
-                                <video controls width="100%">
-                                    [File video 1.mp4]
-                                </video>
-                                <p>Contoh video format MP4</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 2 (.avi)</h4>
-                                <video controls width="100%">
-                                    [File video 2.avi]
-                                </video>
-                                <p>Contoh video format AVI</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 3 (.mov)</h4>
-                                <video controls width="100%">
-                                    [File video 3.mov]
-                                </video>
-                                <p>Contoh video format MOV</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 4 (.mkv)</h4>
-                                <video controls width="100%">
-                                    [File video 4.mkv]
-                                </video>
-                                <p>Contoh video format MKV</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 5 (.webm)</h4>
-                                <video controls width="100%">
-                                    [File video 5.webm]
-                                </video>
-                                <p>Contoh video format WebM</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 6 (.mp4)</h4>
-                                <video controls width="100%">
-                                    [File video 6.mp4]
-                                </video>
-                                <p>Contoh video format MP4</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 7 (.wmv)</h4>
-                                <video controls width="100%">
-                                    [File video 7.wmv]
-                                </video>
-                                <p>Contoh video format WMV</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 8 (.flv)</h4>
-                                <video controls width="100%">
-                                    [File video 8.flv]
-                                </video>
-                                <p>Contoh video format FLV</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 9 (.mpeg)</h4>
-                                <video controls width="100%">
-                                    [File video 9.mpeg]
-                                </video>
-                                <p>Contoh video format MPEG</p>
-                            </div>
-                            <div class="example">
-                                <h4>Video 10 (.mp4)</h4>
-                                <video controls width="100%">
-                                    [File video 10.mp4]
-                                </video>
-                                <p>Contoh video format MP4</p>
-                            </div>
+            </div>
+        
+            <!-- Tab ANIMATION -->
+            <div id="animation" class="tab-content">
+                <div class="format-grid">
+                    <!-- 3D Animation -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>3D</h3>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://www.youtube.com/embed/KMpDF_OG2WI" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>3D Animation</p>
+                            <a href="https://www.youtube.com/watch?v=KMpDF_OG2WI" target="_blank" class="download-btn">
+                                <i class="fas fa-video"></i> Watch on youtube
+                            </a>
                         </div>
                     </div>
+                    
+                    <!-- 2D -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>2D</h3>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://www.youtube.com/embed/X-UwvTtPIGc" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>2D animation</p>
+                            <a href="https://www.youtube.com/watch?v=X-UwvTtPIGc" target="_blank" class="download-btn">
+                                <i class="fas fa-video"></i> Watch on youtube
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- whiteboard -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>White Board</h3>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://www.youtube.com/embed/IUn2qrbVZQ8" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>White board animation</p>
+                            <a href="https://www.youtube.com/watch?v=IUn2qrbVZQ8" target="_blank" class="download-btn">
+                                <i class="fas fa-video"></i> Watch on youtube
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Typography -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>Typography</h3>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://www.youtube.com/embed/sfNC3UaVhNs" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>Typography</p>
+                            <a href="https://www.youtube.com/watch?v=sfNC3UaVhNs" target="_blank" class="download-btn">
+                                <i class="fas fa-video"></i> Watch on youtube
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Clay -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>Clay</h3>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://www.youtube.com/embed/jVdlxwX6A7g" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>Clay animation</p>
+                            <a href="https://www.youtube.com/watch?v=jVdlxwX6A7g" target="_blank" class="download-btn">
+                                <i class="fas fa-video"></i> Watch on youtube
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Stop Motion -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>Stop Motion</h3>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://www.youtube.com/embed/MEglOulvgSY" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>Stop Motion</p>
+                            <a href="https://www.youtube.com/watch?v=MEglOulvgSY" target="_blank" class="download-btn">
+                                <i class="fas fa-video"></i> Watch on youtube
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Traditional Cell -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>Traditional Cell</h3>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://www.youtube.com/embed/ElXRkfVBIp0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>Traditional cell animation</p>
+                            <a href="https://www.youtube.com/watch?v=ElXRkfVBIp0" target="_blank" class="download-btn">
+                                <i class="fas fa-video"></i> Watch on youtube
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Rotoscoping -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>Rotoscoping</h3>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://www.youtube.com/embed/FawhzrrVLhc" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>Rotoscoping</p>
+                            <a href="https://www.youtube.com/watch?v=FawhzrrVLhc" target="_blank" class="download-btn">
+                                <i class="fas fa-video"></i> Watch on youtube
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Flipbook -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>Flipbook</h3>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://www.youtube.com/embed/ntD2qiGx-DY" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>Flipbook animation</p>
+                            <a href="https://www.youtube.com/watch?v=ntD2qiGx-DY" target="_blank" class="download-btn">
+                                <i class="fas fa-video"></i> Watch on youtube
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Puppet -->
+                    <div class="format-card">
+                        <div class="format-header">
+                            <h3>Puppet</h3>
+                        </div>
+                        <div class="format-preview">
+                            <iframe src="https://www.youtube.com/embed/yAEXNlPVxYk" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="format-desc">
+                            <p>Puppet animation</p>
+                            <a href="https://www.youtube.com/watch?v=yAEXNlPVxYk" target="_blank" class="download-btn">
+                                <i class="fas fa-video"></i> Watch on youtube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            .data-types {
+                background-color: var(--card-bg);
+                border-radius: 10px;
+                padding: 2rem;
+                margin: 2rem 0;
+                box-shadow: 0 5px 15px var(--shadow-color);
+            }
+        
+            .category-tabs {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                margin-bottom: 1.5rem;
+                border-bottom: 2px solid var(--primary-color);
+                padding-bottom: 0.5rem;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        
+            .tab-button {
+                background: none;
+                border: none;
+                padding: 0.8rem 1.2rem;
+                cursor: pointer;
+                font-weight: bold;
+                color: var(--text-color);
+                border-radius: 5px 5px 0 0;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                transition: all 0.3s;
+                min-width: 120px;
+                justify-content: center;
+            }
+        
+            .tab-button:hover {
+                background-color: rgba(52, 152, 219, 0.1);
+            }
+        
+            .tab-button.active {
+                background-color: var(--primary-color);
+                color: white;
+            }
+        
+            .tab-content {
+                display: none;
+                animation: fadeIn 0.5s;
+            }
+        
+            .format-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 1.5rem;
+            }
+        
+            .format-card {
+                background-color: var(--light-color);
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+                transition: transform 0.3s;
+            }
+        
+            .format-card:hover {
+                transform: translateY(-5px);
+            }
+        
+            .format-header {
+                background-color: var(--primary-color);
+                color: white;
+                padding: 0.8rem 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        
+            .format-header h3 {
+                margin: 0;
+                font-size: 1.1rem;
+            }
+        
+            .format-header span {
+                font-size: 0.9rem;
+                opacity: 0.8;
+            }
+        
+            .format-preview {
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--bg-color);
+            }
+        
+            .format-preview iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        
+            .audio-preview {
+                height: 100px;
+                font-size: 3rem;
+                color: var(--primary-color);
+            }
+        
+            .font-preview {
+                height: 100px;
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                background-color: var(--bg-color);
+            }
+        
+            .format-desc {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+        
+            .format-desc p {
+                margin: 0.3rem 0;
+            }
+        
+            .download-btn {
+                display: inline-block;
+                margin-top: 0.5rem;
+                padding: 0.3rem 0.8rem;
+                background: var(--primary-color);
+                color: white;
+                border-radius: 4px;
+                text-decoration: none;
+                font-size: 0.8rem;
+                transition: all 0.3s;
+            }
+        
+            .download-btn:hover {
+                background: #2980b9;
+                transform: translateY(-2px);
+            }
+        
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+        
+            /* Dark mode adjustments */
+            [data-theme="dark"] .format-card {
+                background-color: #2c3e50;
+            }
+        
+            [data-theme="dark"] .format-preview {
+                background-color: rgba(0,0,0,0.2);
+            }
+        
+            @media (max-width: 768px) {
+                .format-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+        
+        <script>
+            // Fungsi untuk membuka tab
+            function openTab(tabName) {
+                // Sembunyikan semua tab content
+                const tabContents = document.getElementsByClassName("tab-content");
+                for (let i = 0; i < tabContents.length; i++) {
+                    tabContents[i].style.display = "none";
+                }
+                
+                // Nonaktifkan semua tab button
+                const tabButtons = document.getElementsByClassName("tab-button");
+                for (let i = 0; i < tabButtons.length; i++) {
+                    tabButtons[i].classList.remove("active");
+                }
+                
+                // Tampilkan tab yang dipilih dan aktifkan button
+                document.getElementById(tabName).style.display = "block";
+                event.currentTarget.classList.add("active");
+            }
+        
+            // Fungsi untuk menginisialisasi player audio
+            function initAudioPlayers() {
+                document.querySelectorAll('.audio-preview').forEach(preview => {
+                    const fileId = preview.getAttribute('data-fileid');
+                    preview.innerHTML = `
+                        <audio controls style="width:100%">
+                            <source src="https://drive.google.com/uc?export=download&id=${fileId}" type="audio/mpeg">
+                            Browser tidak mendukung audio
+                        </audio>
+                    `;
+                });
+            }
+        
+            // Jalankan saat halaman dimuat
+            window.addEventListener('DOMContentLoaded', () => {
+                initAudioPlayers();
+            });
+        </script>
+        </div>
+        
+        <style>
+            /* [CSS sebelumnya tetap sama] */
+            .category-tabs {
+                overflow-x: auto;
+                white-space: nowrap;
+                padding-bottom: 5px;
+                scrollbar-width: thin;
+            }
+            
+            .category-tabs::-webkit-scrollbar {
+                height: 5px;
+            }
+            
+            .category-tabs::-webkit-scrollbar-thumb {
+                background: var(--primary-color);
+                border-radius: 10px;
+            }
+            
+            .tab-button {
+                min-width: 120px;
+                justify-content: center;
+            }
+            
+            .format-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+            
+            @media (max-width: 600px) {
+                .format-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+        
+        <script>
+            // [JavaScript sebelumnya tetap sama]
+        </script>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            .data-types {
+                background-color: var(--card-bg);
+                border-radius: 10px;
+                padding: 2rem;
+                margin: 2rem 0;
+                box-shadow: 0 5px 15px var(--shadow-color);
+            }
+        
+            .category-tabs {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                margin-bottom: 1.5rem;
+                border-bottom: 2px solid var(--primary-color);
+                padding-bottom: 0.5rem;
+            }
+        
+            .tab-button {
+                background: none;
+                border: none;
+                padding: 0.8rem 1.2rem;
+                cursor: pointer;
+                font-weight: bold;
+                color: var(--text-color);
+                border-radius: 5px 5px 0 0;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                transition: all 0.3s;
+            }
+        
+            .tab-button:hover {
+                background-color: rgba(52, 152, 219, 0.1);
+            }
+        
+            .tab-button.active {
+                background-color: var(--primary-color);
+                color: white;
+            }
+        
+            .tab-content {
+                display: none;
+                animation: fadeIn 0.5s;
+            }
+        
+            .format-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
+        
+            .format-card {
+                background-color: var(--light-color);
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+                transition: transform 0.3s;
+            }
+        
+            .format-card:hover {
+                transform: translateY(-5px);
+            }
+        
+            .format-header {
+                background-color: var(--primary-color);
+                color: white;
+                padding: 0.8rem 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        
+            .format-header h3 {
+                margin: 0;
+                font-size: 1.1rem;
+            }
+        
+            .format-header span {
+                font-size: 0.9rem;
+                opacity: 0.8;
+            }
+        
+            .format-preview {
+                height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--bg-color);
+                padding: 1rem;
+            }
+        
+            .audio-preview {
+                height: 100px;
+            }
+        
+            .font-preview {
+                height: 100px;
+                display: flex;
+                align-items: center;
+                padding: 0 1rem;
+            }
+        
+            .format-preview img,
+            .format-preview video {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        
+            .format-desc {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+        
+            .format-desc p {
+                margin: 0.3rem 0;
+            }
+        
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+        
+            /* Dark mode adjustments */
+            [data-theme="dark"] .format-card {
+                background-color: #2c3e50;
+            }
+        
+            [data-theme="dark"] .format-preview {
+                background-color: rgba(0,0,0,0.2);
+            }
+        
+            @media (max-width: 768px) {
+                .category-tabs {
+                    overflow-x: auto;
+                    flex-wrap: nowrap;
+                    padding-bottom: 0;
+                }
+                
+                .format-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+        
+        <script>
+            function openTab(tabName) {
+                // Sembunyikan semua tab content
+                const tabContents = document.getElementsByClassName("tab-content");
+                for (let i = 0; i < tabContents.length; i++) {
+                    tabContents[i].style.display = "none";
+                }
+                
+                // Nonaktifkan semua tab button
+                const tabButtons = document.getElementsByClassName("tab-button");
+                for (let i = 0; i < tabButtons.length; i++) {
+                    tabButtons[i].classList.remove("active");
+                }
+                
+                // Tampilkan tab yang dipilih dan aktifkan button
+                document.getElementById(tabName).style.display = "block";
+                event.currentTarget.classList.add("active");
+            }
+        </script>
 
             </div>
         </div>
