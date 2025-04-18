@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS - Tugas UTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Variables untuk Light Mode */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --light-color: #ecf0f1;
+            --dark-color: #34495e;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: white;
+            --header-bg: #2c3e50;
+            --footer-bg: #2c3e50;
+            --contact-bg: white;
+            --project-bg: #f1f1f1;
+            --skill-bg: #e0e0e0;
+            --nav-link-color: white;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --hero-overlay: rgba(0, 0, 0, 0.7);
+            --hero-text: white;
+            --transition-time: 0.4s;
+        }
+
+        /* Dark Mode Variables */
+        [data-theme="dark"] {
+            --primary-color: #3498db;
+            --secondary-color: #34495e;
+            --light-color: #2c3e50;
+            --dark-color: #ecf0f1;
+            --accent-color: #e74c3c;
+            --text-color: #f0f0f0;
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --header-bg: #1a1a1a;
+            --footer-bg: #1a1a1a;
+            --contact-bg: #1e1e1e;
+            --project-bg: #121212;
+            --skill-bg: #333;
+            --nav-link-color: #f0f0f0;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --hero-overlay: rgba(0, 0, 0, 0.8);
+            --hero-text: #f0f0f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color var(--transition-time), color var(--transition-time);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--header-bg);
+            color: white;
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px var(--shadow-color);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-title h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-title p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        /* Back Button */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            margin-bottom: 2rem;
+        }
+
+        .back-btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        /* PDF Viewer */
+        .pdf-container {
+            margin: 2rem 0;
+        }
+
+        .pdf-viewer {
+            width: 100%;
+            height: 600px;
+            border: 1px solid var(--light-color);
+            border-radius: 5px;
+            background-color: var(--card-bg);
+            box-shadow: 0 5px 15px var(--shadow-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .pdf-placeholder {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .pdf-placeholder i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Data Types Section */
+        .data-types {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background: var(--primary-color);
+            bottom: -10px;
+            left: 25%;
+        }
+
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .data-card {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .data-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px var(--shadow-color);
+        }
+
+        .data-card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .data-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .data-card h3 {
+            color: var(--secondary-color);
+            margin: 0;
+        }
+
+        .formats {
+            margin-top: 1rem;
+        }
+
+        .example {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dashed rgba(0,0,0,0.1);
+        }
+
+        [data-theme="dark"] .example {
+            border-bottom: 1px dashed rgba(255,255,255,0.1);
+        }
+
+        .example:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .example h4 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+            font-size: 1rem;
+        }
+
+        .image-example {
+            border: 1px solid #ddd;
+            margin: 0.5rem 0;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+
+        [data-theme="dark"] .image-example {
+            border-color: #444;
+        }
+
+        audio, video {
+            width: 100%;
+            background: var(--bg-color);
+            border-radius: 4px;
+            margin: 0.5rem 0;
+        }
+
+        /* Theme Toggle */
+        .theme-toggle-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 1rem;
+        }
+
+        .theme-toggle {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .theme-toggle:hover {
+            background: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--footer-bg);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+        .footer-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .pdf-viewer {
+                height: 400px;
+            }
+            
+            .data-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="page-title">
+                    <h1>Ujian Tengah Semester (UTS)</h1>
+                    <p>Sistem Multimedia</p>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Kembali
+        </a>
+
+        <div class="pdf-container" style="width: 100%; height: 600px;">
+            <div class="pdf-viewer" style="width: 100%; height: 100%;">
+                <embed src="Tugas/UTS.pdf" type="application/pdf" width="100%" height="100%">
+            </div>
+        </div>
+
+        <div class="data-types">
+            <div class="section-title">
+                <h2>Jenis Data dan Format-formatnya</h2>
+            </div>
+            <div class="data-grid">
+                <!-- Font -->
+                <div class="data-card">
+                    <div class="data-card-header">
+                        <i class="fas fa-font"></i>
+                        <h3>Font</h3>
+                    </div>
+                    <div class="data-card-content">
+                        <div class="formats">
+                            <div class="example">
+                                <h4>Arial</h4>
+                                <p style="font-family: 'Arial'"> Halo, ini preview dari font terkait</p>
+                            </div>
+                            <div class="example">
+                                <h4>Times New Roman</h4>
+                                <p style="font-family: 'Times New Roman'"> Halo, ini preview dari font terkait</p>
+                            </div>
+                            <div class="example">
+                                <h4>Verdana</h4>
+                                <p style="font-family: 'Verdana'"> Halo, ini preview dari font terkait</p>
+                            </div>
+                            <div class="example">
+                                <h4>Georgia</h4>
+                                <p style="font-family: 'Georgia'"> Halo, ini preview dari font terkait</p>
+                            </div>
+                            <div class="example">
+                                <h4>Tahoma</h4>
+                                <p style="font-family: 'Tahoma'"> Halo, ini preview dari font terkait</p>
+                            </div>
+                            <div class="example">
+                                <h4>Sans-Serif</h4>
+                                <p style="font-family: 'sans-serif'"> Halo, ini preview dari font terkait</p>
+                            </div>
+                            <div class="example">
+                                <h4>Garamond</h4>
+                                <p style="font-family: 'Garamond'"> Halo, ini preview dari font terkait</p>
+                            </div>
+                            <div class="example">
+                                <h4>Consolas</h4>
+                                <p style="font-family: 'Consolas'"> Halo, ini preview dari font terkait</p>
+                            </div>
+                            <div class="example">
+                                <h4>Courier New</h4>
+                                <p style="font-family: 'Courier New'"> Halo, ini preview dari font terkait</p>
+                            </div>
+                            <div class="example">
+                                <h4>Impact</h4>
+                                <p style="font-family: 'Impact'"> Halo, ini preview dari font terkait</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gambar -->
+                <div class="data-card">
+                    <div class="data-card-header">
+                        <i class="fas fa-image"></i>
+                        <h3>Gambar</h3>
+                    </div>
+                    <div class="data-card-content">
+                        <div class="formats">
+                            <div class="example">
+                                <h4>Gambar 1 (.jpeg)</h4>
+                                <div class="image-example">
+                                    <img src="Tugas/gambar/Batman.jpeg">
+                                </div>
+                                <p>Contoh gambar format JPEG</p>
+                            </div>
+                            <div class="example">
+                                <h4>Gambar 2 (.png)</h4>
+                                <div class="image-example">
+                                    <img src="Tugas/gambar/Batman.png">
+                                </div>
+                                <p>Contoh gambar format PNG</p>
+                            </div>
+                            <div class="example">
+                                <h4>Gambar 3 (.gif)</h4>
+                                <div class="image-example">
+                                    <img src="Tugas/gambar/Batman.gif">
+                                </div>
+                                <p>Contoh gambar format GIF</p>
+                            </div>
+                            <div class="example">
+                                <h4>Gambar 4 (.webp)</h4>
+                                <div class="image-example">
+                                    <img src="Tugas/gambar/Batman.webp">
+                                </div>
+                                <p>Contoh gambar format WebP</p>
+                            </div>
+                            <div class="example">
+                                <h4>Gambar 5 (.svg)</h4>
+                                <div class="image-example">
+                                    <img src="Tugas/gambar/Batman.svg">
+                                </div>
+                                <p>Contoh gambar format SVG</p>
+                            </div>
+                            <div class="example">
+                                <h4>Gambar 6 (.jpg)</h4>
+                                <div class="image-example">
+                                    <img src="Tugas/gambar/Batman.jpg">
+                                </div>
+                                <p>Contoh gambar format JPG</p>
+                            </div>
+                            <div class="example">
+                                <h4>Gambar 7 (.tiff)</h4>
+                                <div class="image-example">
+                                    <img src="Tugas/gambar/Batman.tiff">
+                                </div>
+                                <p>Contoh gambar format TIFF</p>
+                            </div>
+                            <div class="example">
+                                <h4>Gambar 8 (.bmp)</h4>
+                                <div class="image-example">
+                                    <img src="Tugas/gambar/Batman.bmp">
+                                </div>
+                                <p>Contoh gambar format BMP</p>
+                            </div>
+                            <div class="example">
+                                <h4>Gambar 9 (.psd)</h4>
+                                <div class="image-example">
+                                    <img src="Tugas/gambar/Batman.psd";
+                                </div>
+                                <p>Contoh gambar format PSD</p>
+                            </div>
+                            <div class="example">
+                                <h4>Gambar 10 (.eps)</h4>
+                                <div class="image-example">
+                                    <img src="Tugas/gambar/Batman.eps";
+                                </div>
+                                <p>Contoh gambar format EPS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio -->
+                <div class="data-card">
+                    <div class="data-card-header">
+                        <i class="fas fa-music"></i>
+                        <h3>Audio</h3>
+                    </div>
+                    <div class="data-card-content">
+                        <div class="formats">
+                            <div class="example">
+                                <h4>Audio 1 (.mp3)</h4>
+                                <audio controls style="width: 100%">
+                                    <source src="Tugas/audio/audio.mp3";
+                                </audio>
+                                <p>Contoh audio format MP3</p>
+                            </div>
+                            <div class="example">
+                                <h4>Audio 2 (.wav)</h4>
+                                <audio controls style="width: 100%">
+                                    [File audio 2.wav]
+                                </audio>
+                                <p>Contoh audio format WAV</p>
+                            </div>
+                            <div class="example">
+                                <h4>Audio 3 (.ogg)</h4>
+                                <audio controls style="width: 100%">
+                                    [File audio 3.ogg]
+                                </audio>
+                                <p>Contoh audio format OGG</p>
+                            </div>
+                            <div class="example">
+                                <h4>Audio 4 (.flac)</h4>
+                                <audio controls style="width: 100%">
+                                    [File audio 4.flac]
+                                </audio>
+                                <p>Contoh audio format FLAC</p>
+                            </div>
+                            <div class="example">
+                                <h4>Audio 5 (.aac)</h4>
+                                <audio controls style="width: 100%">
+                                    [File audio 5.aac]
+                                </audio>
+                                <p>Contoh audio format AAC</p>
+                            </div>
+                            <div class="example">
+                                <h4>Audio 6 (.mp3)</h4>
+                                <audio controls style="width: 100%">
+                                    [File audio 6.mp3]
+                                </audio>
+                                <p>Contoh audio format MP3</p>
+                            </div>
+                            <div class="example">
+                                <h4>Audio 7 (.wav)</h4>
+                                <audio controls style="width: 100%">
+                                    [File audio 7.wav]
+                                </audio>
+                                <p>Contoh audio format WAV</p>
+                            </div>
+                            <div class="example">
+                                <h4>Audio 8 (.m4a)</h4>
+                                <audio controls style="width: 100%">
+                                    [File audio 8.m4a]
+                                </audio>
+                                <p>Contoh audio format M4A</p>
+                            </div>
+                            <div class="example">
+                                <h4>Audio 9 (.opus)</h4>
+                                <audio controls style="width: 100%">
+                                    [File audio 9.opus]
+                                </audio>
+                                <p>Contoh audio format Opus</p>
+                            </div>
+                            <div class="example">
+                                <h4>Audio 10 (.mp3)</h4>
+                                <audio controls style="width: 100%">
+                                    [File audio 10.mp3]
+                                </audio>
+                                <p>Contoh audio format MP3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video -->
+                <div class="data-card">
+                    <div class="data-card-header">
+                        <i class="fas fa-video"></i>
+                        <h3>Video</h3>
+                    </div>
+                    <div class="data-card-content">
+                        <div class="formats">
+                            <div class="example">
+                                <h4>Video 1 (.mp4)</h4>
+                                <video controls width="100%">
+                                    [File video 1.mp4]
+                                </video>
+                                <p>Contoh video format MP4</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 2 (.avi)</h4>
+                                <video controls width="100%">
+                                    [File video 2.avi]
+                                </video>
+                                <p>Contoh video format AVI</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 3 (.mov)</h4>
+                                <video controls width="100%">
+                                    [File video 3.mov]
+                                </video>
+                                <p>Contoh video format MOV</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 4 (.mkv)</h4>
+                                <video controls width="100%">
+                                    [File video 4.mkv]
+                                </video>
+                                <p>Contoh video format MKV</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 5 (.webm)</h4>
+                                <video controls width="100%">
+                                    [File video 5.webm]
+                                </video>
+                                <p>Contoh video format WebM</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 6 (.mp4)</h4>
+                                <video controls width="100%">
+                                    [File video 6.mp4]
+                                </video>
+                                <p>Contoh video format MP4</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 7 (.wmv)</h4>
+                                <video controls width="100%">
+                                    [File video 7.wmv]
+                                </video>
+                                <p>Contoh video format WMV</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 8 (.flv)</h4>
+                                <video controls width="100%">
+                                    [File video 8.flv]
+                                </video>
+                                <p>Contoh video format FLV</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 9 (.mpeg)</h4>
+                                <video controls width="100%">
+                                    [File video 9.mpeg]
+                                </video>
+                                <p>Contoh video format MPEG</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 10 (.mp4)</h4>
+                                <video controls width="100%">
+                                    [File video 10.mp4]
+                                </video>
+                                <p>Contoh video format MP4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-card">
+                    <div class="data-card-header">
+                        <i class="fas fa-film"></i>
+                        <h3>Animasi</h3>
+                    </div>
+                    <div class="data-card-content">
+                        <div class="formats">
+                            <div class="example">
+                                <h4>Video 1 (.mp4)</h4>
+                                <video controls width="100%">
+                                    [File video 1.mp4]
+                                </video>
+                                <p>Contoh video format MP4</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 2 (.avi)</h4>
+                                <video controls width="100%">
+                                    [File video 2.avi]
+                                </video>
+                                <p>Contoh video format AVI</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 3 (.mov)</h4>
+                                <video controls width="100%">
+                                    [File video 3.mov]
+                                </video>
+                                <p>Contoh video format MOV</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 4 (.mkv)</h4>
+                                <video controls width="100%">
+                                    [File video 4.mkv]
+                                </video>
+                                <p>Contoh video format MKV</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 5 (.webm)</h4>
+                                <video controls width="100%">
+                                    [File video 5.webm]
+                                </video>
+                                <p>Contoh video format WebM</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 6 (.mp4)</h4>
+                                <video controls width="100%">
+                                    [File video 6.mp4]
+                                </video>
+                                <p>Contoh video format MP4</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 7 (.wmv)</h4>
+                                <video controls width="100%">
+                                    [File video 7.wmv]
+                                </video>
+                                <p>Contoh video format WMV</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 8 (.flv)</h4>
+                                <video controls width="100%">
+                                    [File video 8.flv]
+                                </video>
+                                <p>Contoh video format FLV</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 9 (.mpeg)</h4>
+                                <video controls width="100%">
+                                    [File video 9.mpeg]
+                                </video>
+                                <p>Contoh video format MPEG</p>
+                            </div>
+                            <div class="example">
+                                <h4>Video 10 (.mp4)</h4>
+                                <video controls width="100%">
+                                    [File video 10.mp4]
+                                </video>
+                                <p>Contoh video format MP4</p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Maulana Malik Ibrahim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fungsi untuk mengatur tema
+        function setTheme(theme) {
+            document.body.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            
+            const themeToggle = document.getElementById('themeToggle');
+            if (theme === 'dark') {
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+            }
+        }
+
+        // Fungsi untuk toggle tema
+        function toggleTheme() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            if (currentTheme === 'dark') {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        }
+
+        // Inisialisasi tema saat halaman dimuat
+        function initTheme() {
+            // Cek tema yang disimpan di localStorage
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            setTheme(savedTheme);
+            
+            // Jika datang dari halaman utama, ikuti tema dari URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const themeFromMain = urlParams.get('theme');
+            if (themeFromMain && (themeFromMain === 'dark' || themeFromMain === 'light')) {
+                setTheme(themeFromMain);
+            }
+        }
+
+        // Event listener untuk tombol toggle
+        document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+
+        // Saat kembali ke halaman utama, bawa informasi tema
+        document.querySelector('.back-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            window.location.href = `index.html?theme=${currentTheme}`;
+        });
+
+        // Inisialisasi saat halaman dimuat
+        window.addEventListener('DOMContentLoaded', initTheme);
+    </script>
+</body>
+</html>
